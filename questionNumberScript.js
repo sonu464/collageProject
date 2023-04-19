@@ -17,7 +17,7 @@ function htmlQuestion() {
     quehtmlContainer.style.display = "block";
     quecssContainer.style.display = "none";
     queJsContainer.style.display = "none";
-
+    loadQuestion();
 }
 
 function cssQuestion() {
@@ -37,15 +37,11 @@ function jsQuestion() {
     hQue.style.display = "none";
     cssQue.style.display = "none";
     jsQue.style.display = "block";
+    loadQuestion2();
 }
-
-
-
-
-
 
 // ______________________ Inspect Script _________________________
 
-// document.addEventListener('contextmenu',function cb(e){
-//     e.preventDefault();
-// })
+ document.addEventListener('contextmenu',function cb(e){
+     e.preventDefault();
+ })
