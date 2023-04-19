@@ -259,132 +259,19 @@ const htmlQuestions = [
 
 ]
 
-let index = 0;
+let index=0;
 let htmlQue = document.getElementById('html-que');
-let optionInputs = document.querySelectorAll('.option')
-
+let optionInputs = document.querySelectorAll('.option');
 let queHtmlBtn = document.querySelectorAll('.que-html-btn');
 
-queHtmlBtn[0].addEventListener('click', function cb() {
-    index = 0;
-    loadQuestion();
-})
 
-queHtmlBtn[1].addEventListener('click', function cb() {
-    index = 1; loadQuestion();
-})
-queHtmlBtn[2].addEventListener('click', function cb() {
-    index = 2;
-    loadQuestion();
-})
-queHtmlBtn[3].addEventListener('click', function cb() {
-    index = 3;
-    loadQuestion();
-})
-queHtmlBtn[4].addEventListener('click', function cb() {
-    index = 4;
-    loadQuestion();
-})
-queHtmlBtn[5].addEventListener('click', function cb() {
-    index = 5;
-    loadQuestion();
-})
-queHtmlBtn[6].addEventListener('click', function cb() {
-    index = 6;
-    loadQuestion();
-})
-queHtmlBtn[7].addEventListener('click', function cb() {
-    index = 7;
-    loadQuestion();
-})
-queHtmlBtn[8].addEventListener('click', function cb() {
-    index = 8;
-    loadQuestion();
-})
-queHtmlBtn[9].addEventListener('click', function cb() {
-    index = 9;
-    loadQuestion();
-})
-queHtmlBtn[10].addEventListener('click', function cb() {
-    index = 10;
-    loadQuestion();
-})
-queHtmlBtn[11].addEventListener('click', function cb() {
-    index = 11;
-    loadQuestion();
-})
-queHtmlBtn[12].addEventListener('click', function cb() {
-    index = 12;
-    loadQuestion();
-})
-queHtmlBtn[13].addEventListener('click', function cb() {
-    index = 13;
-    loadQuestion();
-})
-queHtmlBtn[14].addEventListener('click', function cb() {
-    index = 14;
-    loadQuestion();
-})
-queHtmlBtn[15].addEventListener('click', function cb() {
-    index = 15;
-    loadQuestion();
-})
-queHtmlBtn[16].addEventListener('click', function cb() {
-    index = 16;
-    loadQuestion();
-})
-queHtmlBtn[17].addEventListener('click', function cb() {
-    index = 17;
-    loadQuestion();
-})
-queHtmlBtn[18].addEventListener('click', function cb() {
-    index = 18;
-    loadQuestion();
-})
-queHtmlBtn[19].addEventListener('click', function cb() {
-    index = 19;
-    loadQuestion();
-})
-queHtmlBtn[20].addEventListener('click', function cb() {
-    index = 20;
-    loadQuestion();
-})
-queHtmlBtn[21].addEventListener('click', function cb() {
-    index = 21;
-    loadQuestion();
-})
-queHtmlBtn[22].addEventListener('click', function cb() {
-    index = 22;
-    loadQuestion();
-})
-queHtmlBtn[23].addEventListener('click', function cb() {
-    index = 23;
-    loadQuestion();
-})
-queHtmlBtn[24].addEventListener('click', function cb() {
-    index = 24;
-    loadQuestion();
-})
-queHtmlBtn[25].addEventListener('click', function cb() {
-    index = 25;
-    loadQuestion();
-})
-queHtmlBtn[26].addEventListener('click', function cb() {
-    index = 26;
-    loadQuestion();
-})
-queHtmlBtn[27].addEventListener('click', function cb() {
-    index = 27;
-    loadQuestion();
-})
-queHtmlBtn[28].addEventListener('click', function cb() {
-    index = 28;
-    loadQuestion();
-})
-queHtmlBtn[29].addEventListener('click', function cb() {
-    index = 29;
-    loadQuestion();
-})
+for(let i = 0;i<30;++i){
+    queHtmlBtn[i].addEventListener('click', function cb() {
+            index = i;
+            loadQuestion();
+        })
+}
+
 
 function loadQuestion() {
 
