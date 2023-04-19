@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar Info -->
+    <nav class="navbar">
+        <div class="logo"></div>
+        <div class="exam-name">
+            <h1>FrontEnd Developer</h1>
+        </div>
+        <div class="student-info">
+            <div class="student-pic"></div>
+            <div class="student-name-timer">
+                <div class="student-name">
+                    <h1>Name : Sonu</h1>
+                    <h1>Id : 1234567890</h1>
+                </div>
+                <div class="exam-timer">
+                    <h2>Timer : 59min 0sec</h2>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Container Info -->
+    <section class="container">
+        <!-- Que Box -->
+        <div class="que-box">
+            <div class="subject">
+                <button onclick="htmlQuestion()" class="html">HTML</button>
+                <button onclick="cssQuestion()" class="css">CSS</button>
+                <button onclick="jsQuestion()" class="js">JAVASCRIPT</button>
+            </div>
+            <div class="que">
+                <div class="html-question">
+                    <div class="question">
+                        <h1 id="html-que"></h1>
+                    </div>
+                    <div class="question-ans">
+                        <div class="row">
+                            <input type="radio" id="option1" class="option" name="option" value="a">
+                            <label for="option1"> Option a</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" id="option2" class="option" name="option" value="a">
+                            <label for="option2"> Option b</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" id="option3" class="option" name="option" value="a">
+                            <label for="option3"> Option c</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" id="option4" class="option" name="option" value="a">
+                            <label for="option4"> Option d</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="css-question">
+                    <div class="question">
+                        <h1 id="css-que"></h1>
+                    </div>
+                    <div class="question-ans">
+                        <div class="row">
+                            <input type="radio" id="option1" class="cssOption" name="option" value="a">
+                            <label for="option1"></label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" id="option2" class="cssOption" name="option" value="a">
+                            <label for="option2"></label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" id="option3" class="cssOption" name="option" value="a">
+                            <label for="option3"></label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" id="option4" class="cssOption" name="option" value="a">
+                            <label for="option4"></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-question">
+                    <div class="question">
+                        <h1 id="js-que">this is js</h1>
+                    </div>
+                    <div class="question-ans">
+                        <div class="row">
+                            <input type="radio" id="option1" class="jsOption" name="option" value="a">
+                            <label for="option1"> Option a</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" id="option2" class="jsOption" name="option" value="a">
+                            <label for="option2"> Option b</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" id="option3" class="jsOption" name="option" value="a">
+                            <label for="option3"> Option c</label>
+                        </div>
+                        <div class="row">
+                            <input type="radio" id="option4" class="jsOption" name="option" value="a">
+                            <label for="option4"> Option d</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit-btn">
+                    <button>Submit</button>
+                </div>
+            </div>
+            <div class="pre-next-btn">
+                <div class="pre-btn"></div>
+                <div class="next-btn"></div>
+            </div>
+        </div>
+
+        <!-- Question Numbers -->
+        <div class="que-no-box">
+            <div class="que-js-container">
+                <div class="que-name">
+                    <h1>JAVASCRIPT Question</h1>
+                </div>
+                <div class="question-number-js">
+                    <button class="que-js-btn">1</button>
+                    <button class="que-js-btn">2</button>
+                    <button class="que-js-btn">3</button>
+                    <button class="que-js-btn">4</button>
+                    <button class="que-js-btn">5</button>
+                    <button class="que-js-btn">6</button>
+                    <button class="que-js-btn">7</button>
+                    <button class="que-js-btn">8</button>
+                    <button class="que-js-btn">9</button>
+                    <button class="que-js-btn">10</button>
+                    <button class="que-js-btn">11</button>
+                    <button class="que-js-btn">12</button>
+                    <button class="que-js-btn">13</button>
+                    <button class="que-js-btn">14</button>
+                    <button class="que-js-btn">15</button>
+                    <button class="que-js-btn">16</button>
+                    <button class="que-js-btn">17</button>
+                    <button class="que-js-btn">18</button>
+                    <button class="que-js-btn">19</button>
+                    <button class="que-js-btn">20</button>
+                    <button class="que-js-btn">21</button>
+                    <button class="que-js-btn">22</button>
+                    <button class="que-js-btn">23</button>
+                    <button class="que-js-btn">24</button>
+                    <button class="que-js-btn">25</button>
+                    <button class="que-js-btn">26</button>
+                    <button class="que-js-btn">27</button>
+                    <button class="que-js-btn">28</button>
+                    <button class="que-js-btn">29</button>
+                    <button class="que-js-btn">30</button>
+                    <button class="que-js-btn">31</button>
+                    <button class="que-js-btn">32</button>
+                    <button class="que-js-btn">33</button>
+                    <button class="que-js-btn">34</button>
+                    <button class="que-js-btn">35</button>
+                    <button class="que-js-btn">36</button>
+                    <button class="que-js-btn">37</button>
+                    <button class="que-js-btn">38</button>
+                    <button class="que-js-btn">39</button>
+                    <button class="que-js-btn">40</button>
+                </div>
+            </div>
+            <div class="que-html-container">
+                <div class="que-name">
+                    <h1>HtML Questions</h1>
+                </div>
+                <div class="question-number-html">
+                    <button class="que-html-btn">1</button>
+                    <button class="que-html-btn">2</button>
+                    <button class="que-html-btn">3</button>
+                    <button class="que-html-btn">4</button>
+                    <button class="que-html-btn">5</button>
+                    <button class="que-html-btn">6</button>
+                    <button class="que-html-btn">7</button>
+                    <button class="que-html-btn">8</button>
+                    <button class="que-html-btn">9</button>
+                    <button class="que-html-btn">10</button>
+                    <button class="que-html-btn">11</button>
+                    <button class="que-html-btn">12</button>
+                    <button class="que-html-btn">13</button>
+                    <button class="que-html-btn">14</button>
+                    <button class="que-html-btn">15</button>
+                    <button class="que-html-btn">16</button>
+                    <button class="que-html-btn">17</button>
+                    <button class="que-html-btn">18</button>
+                    <button class="que-html-btn">19</button>
+                    <button class="que-html-btn">20</button>
+                    <button class="que-html-btn">21</button>
+                    <button class="que-html-btn">22</button>
+                    <button class="que-html-btn">23</button>
+                    <button class="que-html-btn">24</button>
+                    <button class="que-html-btn">25</button>
+                    <button class="que-html-btn">26</button>
+                    <button class="que-html-btn">27</button>
+                    <button class="que-html-btn">28</button>
+                    <button class="que-html-btn">29</button>
+                    <button class="que-html-btn">30</button>
+                </div>
+            </div>
+            <div class="que-css-container">
+                <div class="que-name">
+                    <h1>CSS Question</h1>
+                </div>
+                <div class="question-number-js">
+                    <button class="que-css-btn">1</button>
+                    <button class="que-css-btn">2</button>
+                    <button class="que-css-btn">3</button>
+                    <button class="que-css-btn">4</button>
+                    <button class="que-css-btn">5</button>
+                    <button class="que-css-btn">6</button>
+                    <button class="que-css-btn">7</button>
+                    <button class="que-css-btn">8</button>
+                    <button class="que-css-btn">9</button>
+                    <button class="que-css-btn">10</button>
+                    <button class="que-css-btn">11</button>
+                    <button class="que-css-btn">12</button>
+                    <button class="que-css-btn">13</button>
+                    <button class="que-css-btn">14</button>
+                    <button class="que-css-btn">15</button>
+                    <button class="que-css-btn">16</button>
+                    <button class="que-css-btn">17</button>
+                    <button class="que-css-btn">18</button>
+                    <button class="que-css-btn">19</button>
+                    <button class="que-css-btn">20</button>
+                    <button class="que-css-btn">21</button>
+                    <button class="que-css-btn">22</button>
+                    <button class="que-css-btn">23</button>
+                    <button class="que-css-btn">24</button>
+                    <button class="que-css-btn">25</button>
+                    <button class="que-css-btn">26</button>
+                    <button class="que-css-btn">27</button>
+                    <button class="que-css-btn">28</button>
+                    <button class="que-css-btn">29</button>
+                    <button class="que-css-btn">30</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<script src="questionNumberScript.js"></script>
+<script src="htmlQuestionList.js"></script>
+<script src="cssQuestionList.js"></script>
+<script src="jsQuestionList.js"></script>
+
+</html>
