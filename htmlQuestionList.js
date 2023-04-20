@@ -259,35 +259,22 @@ const htmlQuestions = [
 
 ]
 
-let index=0;
-let htmlQue = document.getElementById('html-que');
-let optionInputs = document.querySelectorAll('.option');
-let queHtmlBtn = document.querySelectorAll('.que-html-btn');
 
+
+let queHtmlBtn = document.querySelectorAll('.que-html-btn');
 
 for(let i = 0;i<30;++i){
     queHtmlBtn[i].addEventListener('click', function cb() {
             index = i;
             loadQuestion();
+            optionInputs.forEach(input => {
+                if (input.checked) {
+                    reset();
+                    wrong--;
+                }
+            })
         })
 }
-
-
-function loadQuestion() {
-
-    const data = htmlQuestions[index];
-    // Adding Question
-    htmlQue.innerText = `${index + 1}) ${data.que}`;
-
-    // Adding Options
-    optionInputs[0].nextElementSibling.innerText = data.a;
-    optionInputs[1].nextElementSibling.innerText = data.b;
-    optionInputs[2].nextElementSibling.innerText = data.c;
-    optionInputs[3].nextElementSibling.innerText = data.d;
-    border();
-}
-
-loadQuestion();
 
 function border() {
     queHtmlBtn[index].style.backgroundColor = "yellow";
