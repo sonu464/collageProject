@@ -31,8 +31,6 @@ function submitQuiz() {
         if (input.checked) {
             ans = input.value;
             visited();
-        }else{
-            notChecked()
         }
     })
 
@@ -59,9 +57,7 @@ function reset() {
 function visited() {
     queHtmlBtn[index].style.backgroundColor = "green";
 }
-function notChecked() {
-    queHtmlBtn[index].style.backgroundColor = "red";
-}
+
 
 
 
