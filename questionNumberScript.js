@@ -11,7 +11,7 @@ let queJsContainer = document.querySelector('.que-js-container');
 
 
 function htmlQuestion() {
-    hQue.style.display = "block";
+    hQue.style.display = "flex";
     cssQue.style.display = "none";
     jsQue.style.display = "none";
     quehtmlContainer.style.display = "block";
@@ -25,7 +25,7 @@ function cssQuestion() {
     quehtmlContainer.style.display = "none";
     queJsContainer.style.display = "none";
     hQue.style.display = "none";
-    cssQue.style.display = "block";
+    cssQue.style.display = "flex";
     jsQue.style.display = "none";
     loadQuestion1();
 }
@@ -36,9 +36,14 @@ function jsQuestion() {
     quecssContainer.style.display = "none";
     hQue.style.display = "none";
     cssQue.style.display = "none";
-    jsQue.style.display = "block";
+    jsQue.style.display = "flex";
     loadQuestion2();
 }
+
+
+
+
+
 
 // ______________________ Inspect Script _________________________
 
