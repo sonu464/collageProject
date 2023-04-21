@@ -44,33 +44,34 @@ function submitQuiz() {
 
     if (ans === data.correct) {
         right++;
-        console.log("right",right);
+        console.log("right", right);
     } else {
         wrong++;
-        console.log("wrong",wrong);
+        console.log("wrong", wrong);
     }
 
     index++;
     loadQuestion();
-    
+
 }
 
 
 function reset() {
+
     optionInputs.forEach(input => {
-        input.checked = false;
+        input.checked = false;   
     })
 }
 
 function visited() {
-    queHtmlBtn[index].style.backgroundColor = "green";
+    queHtmlBtn[index].style.backgroundColor = "#00ff0a";
 }
 
-function endQuiz(){
+function endQuiz() {
     let final1 = document.getElementById("final1")
     navbar.style.display = "none";
     container.style.display = "none";
-    final1.style.display= "block"
+    final1.style.display = "block"
     let div = document.createElement("div");
     final1.appendChild(div);
     div.className = "result"
