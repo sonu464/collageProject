@@ -277,7 +277,7 @@ for(let i = 0;i<30;++i){
 }
 
 function border() {
-    queHtmlBtn[index].style.backgroundColor = "yellow";
+    queHtmlBtn[index].style.backgroundColor = "#ffb405";
 }
 
 
