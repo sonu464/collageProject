@@ -13,7 +13,7 @@ body {
 /* ----------- navbar info ------------ */
 .navbar {
     width: 100%;
-    background-color: #681515;
+    background-color: #97661d;
     /* background: repeating-linear-gradient(90deg, #8e6700, transparent 687px); */
     height: 15vh;
     display: flex;
@@ -186,8 +186,8 @@ body {
     width: 65%;
     display: flex;
     align-items: center;
-    /* background-color: #ccaa61; */
-    background-color: #590e05a3;
+    background-color: #996b05;
+    /* background-color: #590e05a3; */
     border-radius: 71px 20px 199px 74px;
     padding: 7px 30px;
     box-shadow: 0px 0px 6px 0px white;
@@ -216,9 +216,9 @@ body {
     border-radius: 40px;
     padding: 5px 20px;
     margin-bottom: 2.5%;
-    color: black;
-    background-color: #590e05a3;
-    font-weight: 300;
+    color: #5a2d03;
+    background: linear-gradient(45deg, #e9c370, transparent);
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -245,9 +245,14 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 20px;
-    background: repeating-linear-gradient(180deg, #7a2d00, transparent 40px);
+    /* background: repeating-linear-gradient(180deg, #7a2d00, transparent 40px); */
+    background-color: #b57600b8;
     font-weight: bold;
     color: white;
+}
+
+.submit-btn button:hover {
+    background-color: #a5430a;
 }
 
 .pre-next-btn {
@@ -370,8 +375,6 @@ body {
     transition: all .1s;
     border: 1px solid white;
 }
-
-
 
 
 
