@@ -273,6 +273,6 @@ function loadQuestion1() {
 }
 
 function cssborder() {
-    queCssBtn[cssindex].style.backgroundColor = "yellow";
+    queCssBtn[cssindex].style.backgroundColor = "#ffb405";
 }
 
