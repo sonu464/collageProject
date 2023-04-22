@@ -467,5 +467,5 @@ function loadQuestion2() {
 }
 
 function jsborder() {
-   quejsBtn[jsindex].style.backgroundColor = "yellow";
+   quejsBtn[jsindex].style.backgroundColor = "#ffb405";
 }
