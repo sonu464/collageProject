@@ -9,7 +9,7 @@ let quehtmlContainer = document.querySelector('.que-html-container');
 let quecssContainer = document.querySelector('.que-css-container');
 let queJsContainer = document.querySelector('.que-js-container');
 
-
+html.style.backgroundColor = "#d8ca665c";
 function htmlQuestion() {
     hQue.style.display = "flex";
     cssQue.style.display = "none";
@@ -17,6 +17,9 @@ function htmlQuestion() {
     quehtmlContainer.style.display = "block";
     quecssContainer.style.display = "none";
     queJsContainer.style.display = "none";
+    html.style.backgroundColor = "#d8ca665c";
+    css.style.backgroundColor = "white";
+    js.style.backgroundColor = "white";
     loadQuestion();
 }
 
@@ -27,6 +30,9 @@ function cssQuestion() {
     hQue.style.display = "none";
     cssQue.style.display = "flex";
     jsQue.style.display = "none";
+    html.style.backgroundColor = "white";
+    css.style.backgroundColor = "#d8ca665c";
+    js.style.backgroundColor = "white";
     loadQuestion1();
 }
 
@@ -37,12 +43,11 @@ function jsQuestion() {
     hQue.style.display = "none";
     cssQue.style.display = "none";
     jsQue.style.display = "flex";
+    html.style.backgroundColor = "white";
+    css.style.backgroundColor = "white";
+    js.style.backgroundColor = "#d8ca665c";
     loadQuestion2();
 }
-
-
-
-
 
 
 // ______________________ Inspect Script _________________________
