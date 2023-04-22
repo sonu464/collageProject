@@ -151,13 +151,6 @@ body {
     background-color: #ffffff;
 }
 
-.html:hover,
-.css:hover,
-.js:hover {
-    transition: background-color .1s;
-    background-color: #d8ca665c;
-}
-
 .que {
     width: 100%;
     height: 55vh;
@@ -194,7 +187,7 @@ body {
     display: flex;
     align-items: center;
     /* background-color: #ccaa61; */
-    background-color: #a7802e;
+    background-color: #590e05a3;
     border-radius: 71px 20px 199px 74px;
     padding: 7px 30px;
     box-shadow: 0px 0px 6px 0px white;
@@ -211,7 +204,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* border: 1px solid red; */
     border-radius: 40px;
 }
 
@@ -221,13 +213,12 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 4%;
-    /* border: 1px solid #352f00; */
     border-radius: 40px;
     padding: 5px 20px;
     margin-bottom: 2.5%;
-    background: linear-gradient(45deg, #e9c370, transparent);
-    color: #b16f00;
-    font-weight: 600;
+    color: black;
+    background-color: #590e05a3;
+    font-weight: 300;
     cursor: pointer;
 }
 
@@ -241,18 +232,22 @@ body {
 }
 
 .submit-btn {
-    width: 90%;
+    width: 64%;
     height: 6vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* border: 1px solid red; */
+    justify-content: flex-end;
 }
 
 .submit-btn button {
-    width: 15%;
+    width: 25%;
     height: 5vh;
     cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background: repeating-linear-gradient(180deg, #7a2d00, transparent 40px);
+    font-weight: bold;
+    color: white;
 }
 
 .pre-next-btn {
@@ -270,12 +265,13 @@ body {
     width: 45px;
     height: 45px;
     background-color: white;
-    /* border: 2px solid white; */
     cursor: pointer;
     border-radius: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #590e05a3;
+    border-radius: 30px;
 }
 
 /* ----------- Question Numbers ---------- */
@@ -374,6 +370,8 @@ body {
     transition: all .1s;
     border: 1px solid white;
 }
+
+
 
 
 
