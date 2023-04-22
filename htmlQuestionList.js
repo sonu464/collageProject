@@ -262,23 +262,15 @@ const htmlQuestions = [
 
 
 let queHtmlBtn = document.querySelectorAll('.que-html-btn');
-
-for(let i = 0;i<30;++i){
-    queHtmlBtn[i].addEventListener('click', function cb() {
+if (submit === true) {
+}
+for (let i = 0; i < 30; ++i) {
+        queHtmlBtn[i].addEventListener('click', function cb() {
             index = i;
             loadQuestion();
-            optionInputs.forEach(input => {
-                if (input.checked) {
-                    reset();
-                    wrong--;
-                }
             })
-        })
 }
 
 function border() {
     queHtmlBtn[index].style.backgroundColor = "#ffb405";
 }
-
-
-
