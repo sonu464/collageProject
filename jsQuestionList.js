@@ -48,50 +48,28 @@ const jsQuestions = [
       'correct': 'a'
    },
    {
-      'que': `What will be the output of the following code snippet?
-    
-    <script type="text/javascript">
-    a = 5 + "9";
-    document.write(a);
-    </script>`,
-      'a': 'Compilation Error',
-      'b': '14',
-      'c': 'Runtime Error',
-      'd': '59',
+      'que': 'Which object in Javascript doesn’t have a prototype?',
+      'a': 'Base Object',
+      'b': 'All objects have a prototype',
+      'c': 'None of the objects have a prototype',
+      'd': 'None of the above',
+      'correct': 'a'
+   },
+   {
+      'que': 'Which of the following are not server-side Javascript objects?',
+      'a': 'Date',
+      'b': 'FileUpload',
+      'c': 'Function',
+      'd': 'All of the above',
       'correct': 'd'
    },
    {
-      'que': `What will be the output of the following code snippet?
-    
-    <script type="text/javascript" language="javascript">
-      
-    var a = "Scaler";
-    var result = a.substring(2, 4);
-    document.write(result);
-      
-    </script>`,
-      'a': 'al',
-      'b': 'ale',
-      'c': 'cal',
-      'd': 'caler',
-      'correct': 'a'
-   },
-   {
-      'que': `What will be the output of the following code snippet?
-    
-    <script type="text/javascript" language="javascript">
-     
-    var x=12;
-    var y=8;
-    var res=eval("x+y");
-    document.write(res);
-     
-    </script>`,
-      'a': '20',
-      'b': 'x+y',
-      'c': '128',
-      'd': 'None of the above',
-      'correct': 'a'
+      'que': ' How do we write a comment in javascript?',
+      'a': '/* */',
+      'b': '//',
+      'c': '#',
+      'd': '$ $',
+      'correct': 'b'
    },
    {
       'que': 'When the switch statement matches the expression with the given labels, how is the comparison done?',
@@ -118,68 +96,36 @@ const jsQuestions = [
       'correct': 'd'
    },
    {
-      'que': `What will be the output of the following code snippet?
-    
-    (function(){
-     setTimeout(()=> console.log(1),2000);
-     console.log(2);
-     setTimeout(()=> console.log(3),0);
-     console.log(4);
-    })();`,
-      'a': '1 2 3 4',
-      'b': '2 3 4 1',
-      'c': '2 4 3 1',
-      'd': '4 3 2 1',
-      'correct': 'c'
-   },
-   {
-      'que': `What will be the output of the following code snippet?
-    
-    (function(a){
-     return (function(){
-       console.log(a);
-       a = 6;
-     })()
-    })(21);`,
-      'a': '6',
-      'b': 'NaN',
-      'c': '21',
-      'd': 'None of the above',
-      'correct': 'c'
-   },
-   {
-      'que': `What will be the output of the following code snippet?
-    
-    function solve(arr, rotations){
-     if(rotations == 0) return arr;
-     for(let i = 0; i < rotations; i++){
-       let element = arr.pop();
-       arr.unshift(element);
-     }
-     return arr;
-    }
-    // solve([44, 1, 22, 111], 5);`,
-      'a': '[111, 44, 1, 22]',
-      'b': '[44, 1, 22, 111]',
-      'c': '[111, 44, 1, 22]',
-      'd': '[1, 22, 111, 44]',
+      'que': 'Which one of the following is not a example of closures?',
+      'a': 'Graphics',
+      'b': 'Variables',
+      'c': 'Functions',
+      'd': 'Objects',
       'correct': 'a'
    },
    {
-      'que': `What will be the output for the following code snippet?
-    
-    <p id="example"></p>  
-    <script>  
-    function Func()  
-    {  
-    document.getElementById("example").innerHTML=Math.sqrt(81);  
-    }  
-    </script>`,
-      'a': '9',
-      'b': '81',
-      'c': 'Error',
-      'd': '0',
+      'que': 'What is the primary rule of the Lexical Scoping?',
+      'a': 'Functions are always declared in the scope',
+      'b': 'Variables are declared inside the function',
+      'c': 'Functions are always declared outside the scope',
+      'd': 'Functions gets executes using scope chain',
+      'correct': 'd'
+   },
+   {
+      'que': 'What is required in order to implement the Lexical Scoping?',
+      'a': 'To reference the current scope chain',
+      'b': 'Dereference the current scope chain',
+      'c': 'Get the object',
+      'd': 'Return the value',
       'correct': 'a'
+   },
+   {
+      'que': 'Which one of the following utilize the CPU cycles in a massive manner?',
+      'a': 'GUI (Graphic User Interface)',
+      'b': 'Statically generated graphics',
+      'c': 'Generic scoping',
+      'd': 'Dynamically generated graphics',
+      'correct': 'd'
    },
    {
       'que': 'When an operator’s value is NULL, the type of returned by the unary operator is:',
@@ -190,59 +136,39 @@ const jsQuestions = [
       'correct': 'c'
    },
    {
-      'que': `What will be the output of the following code snippet?
-    
-    var a = 1;  
-    var b = 0;  
-    while (a <= 3)  
-    {  
-       a++;  
-       b += a * 2;  
-       print(b);
-    }`,
-      'a': '4 10 18',
-      'b': '1 2 3',
-      'c': '1 4 7',
-      'd': 'None of the above',
+      'que': 'Which one of the following can be considered as the opposite approach of the Lexical Scoping?',
+      'a': 'Dynamic scoping',
+      'b': 'Literal scoping',
+      'c': 'Static scoping',
+      'd': 'Generic scoping',
       'correct': 'a'
    },
    {
-      'que': `What does the Javascript “debugger” statement do?',
+      'que': 'What does the Javascript “debugger” statement do?',
     'a' : 'It will debug all the errors in the program at runtime.',
     'b' : 'It acts as a breakpoint in a program.',
     'c' : 'It will debug error in the current statement if any.',
-    'd' : 'All of the above.`,
+    'd' : 'All of the above.',
       'correct': 'b'
    },
    {
-      'que': `What will be the output of the following code snippet?
-    
-    var a = Math.max();
-    var b = Math.min();
-    print(a);
-    print(b);`,
-      'a': '-Infinity Infinity',
-      'b': 'Infinity -Infinity',
-      'c': 'Infinity Infinity',
-      'd': '-Infinity -Infinity',
+      'que': 'Which one of the following algorithmic languages is not the lexical scoping standardized in?',
+      'a': 'Html',
+      'b': 'Ada',
+      'c': 'Pascal',
+      'd': 'Modula2',
       'correct': 'a'
    },
    {
-      'que': `What will be the output of the following code snippet?
-    
-    var a = Math.max() < Math.min();
-    var b = Math.max() > Math.min();
-    print(a);
-    print(b);`,
-      'a': 'true false',
-      'b': 'false true',
-      'c': 'true true',
-      'd': 'false false',
-      'correct': 'a'
+      'que': 'In JavaScript, what kind of scoping is used?',
+      'a': 'Literal scoping',
+      'b': 'Sequential scoping',
+      'c': 'Segmental scoping',
+      'd': 'Lexical scoping',
+      'correct': 'd'
    },
    {
       'que': `What will be the output of the following code snippet?
-    
     var a = true + true + true * 3;
     print(a)`,
       'a': '3',
@@ -280,12 +206,12 @@ const jsQuestions = [
       'correct': 'c'
    },
    {
-      'que': 'The process in which an object or data structure is translated into a format suitable for transferral over a network, or storage is called?',
-      'a': 'Object Serialization',
-      'b': 'Object Encapsulation',
-      'c': 'Object Inheritance',
-      'd': 'None of the above',
-      'correct': 'a'
+      'que': 'What are the different types of Pop up boxes available in JavaScript?',
+      'a': 'Alert',
+      'b': 'Prompt',
+      'c': 'Confirm',
+      'd': 'All of the above',
+      'correct': 'd'
    },
    {
       'que': 'Which function is used to serialize an object into a JSON string in Javascript?',
@@ -304,24 +230,15 @@ const jsQuestions = [
       'correct': 'b'
    },
    {
-      'que': `What will be the output of the following code snippet?
-    
-    let sum = 0; 
-    const a = [1, 2, 3];
-    a.forEach(getSum);
-    print(sum);
-    function getSum(ele) {
-       sum += ele;
-    }`,
-      'a': '6',
-      'b': '1',
-      'c': '2',
-      'd': 'None of the above',
+      'que': 'Which of the following POSIX signals generate events?',
+      'a': 'SIGINT',
+      'b': 'SIGDOWN',
+      'c': 'SIGFLOAT',
+      'd': 'SIGSHORT',
       'correct': 'a'
    },
    {
       'que': `What will be the output of the following code snippet?
-    
     a = [1, 2, 3, 4, 5];
     print(a.slice(2, 4));`,
       'a': '3, 4',
@@ -331,15 +248,12 @@ const jsQuestions = [
       'correct': 'a'
    },
    {
-      'que': `What will be the output of the following code snippet?
-    
-    print(parseInt("123Hello"));
-    print(parseInt("Hello123"));`,
-      'a': '123 NaN',
-      'b': '123Hello Hello123',
-      'c': 'NaN NaN',
-      'd': '123 123',
-      'correct': 'a'
+      'que': 'Which of the following is the correct syntax to print a page using JavaScript?',
+      'a': 'print();',
+      'b': 'print();',
+      'c': 'print();',
+      'd': 'print();',
+      'correct': 'b'
    },
    {
       'que': 'Which of the following are closures in Javascript?',
@@ -358,19 +272,12 @@ const jsQuestions = [
       'correct': 'd'
    },
    {
-      'que': `What will be the output of the following code snippet?
-    
-    var a = "hello";
-    var sum = 0;
-    for(var i = 0; i < a.length; i++) {
-       sum += (a[i] - 'a');
-    }
-    print(sum);`,
-      'a': '47',
-      'b': 'NaN',
-      'c': '0',
-      'd': 'None of the above',
-      'correct': 'b'
+      'que': 'Which HTML element is used to put the JavaScript code?',
+      'a': '<javascript>',
+      'b': '<js>',
+      'c': '<scripting>',
+      'd': '<script>',
+      'correct': 'd'
    },
    {
       'que': 'What keyword is used to declare an asynchronous function in Javascript?',
@@ -389,28 +296,20 @@ const jsQuestions = [
       'correct': 'a'
    },
    {
-      'que': `What will be the output of the following code snippet?
-    
-    const set = new Set();
-    set.add(5);
-    set.add('Hello');
-    set.add({ name: 'Scaler' });
-    for (let item of set) {
-     console.log(item + 6);
-    }`,
-      'a': '11 NaN NaN',
-      'b': '11 NaN [object Object]',
-      'c': '11 Hello6 [object Object]6',
-      'd': 'None of the above',
-      'correct': 'c'
+      'que': 'Which of the following is not a JavaScript Data Types?',
+      'a': 'Boolean',
+      'b': 'Undefined',
+      'c': 'Number',
+      'd': 'Float',
+      'correct': 'd'
    },
    {
-      'que': 'How are objects compared when they are checked with the strict equality operator?',
-      'a': 'The contents of the objects are compared',
-      'b': 'Their references are compared',
-      'c': 'Both A and B',
-      'd': 'None of the above',
-      'correct': 'b'
+      'que': 'What was the original name of JavaScript when it discovered?',
+      'a': 'LiveScript',
+      'b': 'EScript',
+      'c': 'JScript',
+      'd': 'Mocha',
+      'correct': 'd'
    },
    {
       'que': 'What does ... operator do in JS',
@@ -421,17 +320,12 @@ const jsQuestions = [
       'correct': 'a'
    },
    {
-      'que': `What will be the output of the following code snippet?
-    
-    const example = ({ a, b, c }) => {
-     console.log(a, b, c);
-    };
-    example(0, 1, 2);`,
-      'a': '0 1 2',
-      'b': '0 Undefined Undefined',
-      'c': 'Undefined Undefined Undefined',
-      'd': 'None of the above',
-      'correct': 'c'
+      'que':'Which of the following is not a JavaScript framework or library?',
+      'a': 'Polymer',
+      'b': 'Meteor',
+      'c': 'jQuery',
+      'd': 'Cassandra',
+      'correct': 'd'
    },
 
 ]
@@ -440,7 +334,6 @@ const jsQuestions = [
 let jsindex = 0;
 let jsQue1 = document.getElementById('js-que');
 let jsOptionInputs = document.querySelectorAll('.jsOption')
-console.log(jsOptionInputs);
 
 let quejsBtn = document.querySelectorAll('.que-js-btn');
 
