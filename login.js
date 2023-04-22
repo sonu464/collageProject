@@ -17,8 +17,10 @@ function loginBtn() {
             window.location.replace("result.html");
         }, 5000);
     }
-
-
 }
 
+// ______________________ Inspect Script _________________________
 
+document.addEventListener('contextmenu',function cb(e){
+    e.preventDefault();
+})
