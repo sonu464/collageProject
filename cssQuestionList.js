@@ -113,12 +113,12 @@ const cssQuestions = [
 'correct': 'b'
 },
 {
-'que':'What is the correct syntax for referring an external CSS?',
-'a' : '<link rel="stylesheet" type="text/css" href="style.css">',
-'b' : '<style rel="stylesheet" type="text/css" href="style.css">',
+'que':'Which of the following are types of length units in CSS?',
+'a' : 'Absolute',
+'b' : 'Relative',
 'c' : 'Both A and B',
 'd' : 'None of the above',
-'correct': 'a'
+'correct': ''
 },
 {
 'que':'Which of the following are valid ways to represent a colour in CSS?',
@@ -129,12 +129,12 @@ const cssQuestions = [
 'correct': 'd'
 },
 {
-'que':'Which of the following is the correct way to select all h1 headers in a div element?',
-'a' : 'div h1',
-'b' : 'div-h1',
-'c' : 'h1',
-'d' : 'None of the above',
-'correct': 'a'
+'que':'Which of the following are units of relative length in CSS?',
+'a' : 'em',
+'b' : 'rem',
+'c' : 'vmax',
+'d' : 'All of the above',
+'correct': 'd'
 },
 {
 'que':'We can make rounded borders around elements using which CSS element?',
@@ -247,7 +247,6 @@ const cssQuestions = [
 let cssindex = 0;
 let cssQue1 = document.getElementById('css-que');
 let cssOptionInputs = document.querySelectorAll('.cssOption')
-console.log(cssOptionInputs);
 
 let queCssBtn = document.querySelectorAll('.que-css-btn');
 
