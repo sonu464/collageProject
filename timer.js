@@ -1,9 +1,8 @@
+setTimeout(() => {
+    window.location.replace("result.html");
+}, 3600000);
+
 function countDown() {
-    // setTimeout(() => {
-    //     navbar.style.display = "none";
-    //     container.style.display = "none";
-    //     window.location.href = "result.html"
-    // }, 3600000);
 
     let countdown = document.getElementById("countdown")
     let countDownDate = new Date().getTime() + 3600000;
@@ -26,3 +25,5 @@ function countDown() {
     }, 1000);
 
 }
+
+countDown();
