@@ -64,7 +64,7 @@ function reset() {
 }
 
 function visited() {
-    queHtmlBtn[index].style.backgroundColor = "#00ff0a";
+    queHtmlBtn[index].style.backgroundColor = "#bc894b";
 }
 
 function endQuiz() {
